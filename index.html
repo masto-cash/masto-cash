@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>مسطو كاش | MASTO CASH</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6fa;
+      color: #172033;
+    }
+    header {
+      background: #101827;
+      color: white;
+      padding: 22px 18px;
+      border-radius: 0 0 24px 24px;
+    }
+    .brand { font-size: 25px; font-weight: bold; }
+    .subtitle { color: #9de9c9; margin-top: 7px; }
+    .balance {
+      background: #20334a;
+      padding: 18px;
+      border-radius: 16px;
+      margin-top: 22px;
+    }
+    .balance strong { font-size: 25px; }
+    main { padding: 20px 16px; max-width: 700px; margin: auto; }
+    h2 { font-size: 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px;
+    }
+    .game {
+      background: white;
+      border-radius: 16px;
+      padding: 17px 12px;
+      border: 1px solid #e3e8ef;
+    }
+    .emoji { font-size: 34px; }
+    .game h3 { margin: 10px 0 6px; }
+    .game p { color: #687386; font-size: 13px; }
+    button {
+      border: 0;
+      background: #0d9c70;
+      color: white;
+      border-radius: 10px;
+      padding: 11px;
+      width: 100%;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .notice {
+      background: #e1f6ed;
+      padding: 14px;
+      border-radius: 12px;
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    footer { text-align: center; padding: 25px; color: #687386; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">🎮 مسطو كاش</div>
+    <div class="subtitle">MASTO CASH · شحن ألعابك بسهولة</div>
+    <div class="balance">
+      <div>رصيد المحفظة</div>
+      <p><strong>0.00</strong></p>
+      <small>الرصيد سيظهر بعد ربط الحسابات والمحفظة.</small>
+    </div>
+  </header>
+
+  <main>
+    <h2>اختر لعبتك</h2>
+    <div class="grid">
+      <section class="game">
+        <div class="emoji">🎯</div>
+        <h3>PUBG Mobile</h3>
+        <p>شحن شدات UC</p>
+        <button onclick="chooseGame('PUBG Mobile')">اطلب الشحن</button>
+      </section>
+      <section class="game">
+        <div class="emoji">💎</div>
+        <h3>Free Fire</h3>
+        <p>شحن الجواهر</p>
+        <button onclick="chooseGame('Free Fire')">اطلب الشحن</button>
+      </section>
+      <section class="game">
+        <div class="emoji">⚔️</div>
+        <h3>Mobile Legends</h3>
+        <p>شحن الألماس</p>
+        <button onclick="chooseGame('Mobile Legends')">اطلب الشحن</button>
+      </section>
+      <section class="game">
+        <div class="emoji">🎁</div>
+        <h3>Google Play</h3>
+        <p>بطاقات رقمية حسب التوفر</p>
+        <button onclick="chooseGame('Google Play')">اطلب الشحن</button>
+      </section>
+    </div>
+
+    <div class="notice">
+      <strong>ملاحظة:</strong> هذه نسخة تجريبية للواجهة.
+      الطلبات والدفع والشحن الحقيقي غير مفعّلة بعد.
+    </div>
+  </main>
+
+  <footer>مسطو كاش © 2026</footer>
+
+  <script>
+    function chooseGame(game) {
+      alert('اخترت ' + game +
+        '. سنضيف نموذج الطلب بعد تجهيز الصفحة الرئيسية.');
+    }
+  </script>
+</body>
+</html>
